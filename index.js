@@ -35,7 +35,7 @@ async function getLatLong(lat, long){
 }
 
   
-const endLoc;
+let endLoc;
 
 getLonLatt(lat, long).then(result => { 
   const woeid = result[0].woeid;
