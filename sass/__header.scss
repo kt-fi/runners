@@ -1,0 +1,104 @@
+.header {
+
+    background-color: rgba(89, 241, 255, 0.39);
+
+
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: 40vw 1fr;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    line-height: 15rem;
+
+    @media only screen and (max-width: 1200px) {
+        height: 90vh;
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding: 1rem 0 0 0;
+        align-content: start;
+        height: 55vh;
+    }
+
+    @media only screen and (max-height: 500px) {
+        line-height: 10rem;
+    }
+
+    &__title {
+
+
+        color: $color-salmon;
+        height: 100%;
+        font-size: 10rem;
+        font-family: $font-main;
+        text-shadow: 1px 2px 3px black;
+
+        margin-left: 18rem;
+
+        @media only screen and (max-width: 1200px) {
+            height: 50vh;
+        }
+
+        @media only screen and (max-width: 900px) {
+            height: 45vh;
+            margin-left: 25%;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+            font-size: 7rem;
+            height: 20vh;
+            margin: 15%;
+            line-height: 12rem;
+        }
+
+        @media only screen and (max-height: 500px) {
+            height: 50vh;
+            font-size: 8rem;
+            margin-left: 25%;
+        }
+
+
+
+
+    }
+
+    &__slogan {
+
+        font-size: 5rem;
+        color: $color-yellow;
+        font-family: 'Rokkitt', serif;
+        text-shadow: 1px 2px 3px black;
+        padding-right: 20rem;
+
+        @media only screen and (max-width: 1200px) {
+            grid-column: 1 / -1;
+            grid-row: 2 / 3;
+
+            margin-left: 18rem;
+        }
+
+        @media only screen and (max-width: 900px) {
+            margin-left: 15%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            font-size: 4rem;
+            margin-left: 10%;
+            width: 120%;
+        }
+
+
+        @media only screen and (max-height: 500px) {
+            font-size: 3rem;
+        }
+
+
+    }
+
+}

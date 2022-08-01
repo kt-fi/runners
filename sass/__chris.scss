@@ -1,0 +1,115 @@
+.chris {
+    grid-column:  1 /-1;
+    // grid-row: 5 / 6;
+
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+
+    margin-left: 4rem;
+
+
+    @media only screen and (max-width: 1080px) {
+        grid-template-columns:1fr;
+        margin-left: 0;
+        
+     }
+
+    &__header {
+        grid-column: 1 / -1;
+
+        font-family: $font-main;
+        font-size: 3rem;
+        padding-left: 4rem;
+        padding-top: 4rem;
+
+        @media only screen and (max-width: 900px) {
+            width: 90%;
+            line-height: 4rem;
+         }      
+
+    }
+}
+
+.shoes {
+
+    background-color: $color-salmon;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
+    
+    
+    @media only screen and (max-width: 900px) {
+            width: 100%;
+         }      
+
+    &__header {
+        grid-column: 1 / -1;
+        color: rgb(59, 59, 59);
+        font-size: 2rem;
+        font-family: $font-p;
+        font-weight: 400;
+
+        padding: 4rem;
+
+    }
+
+    &__img {
+        width:100%;
+        height: auto;
+
+        @media only screen and (max-width: 1080px) {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 4rem;
+          
+         }      
+        
+    }
+
+    &__text {
+        font-family: $font-p;
+        font-size: 1.5rem   ;
+        padding: 0 4rem 2rem 4rem;
+        padding-bottom: 3rem;
+
+        grid-row: 3 / 4;
+    }
+}
+
+
+.strava {
+ 
+text-align: center;
+background-image: linear-gradient(
+    to left,
+    rgb(204, 204, 204),
+    rgb(230, 230, 230));
+
+    margin-right: 4rem;
+    
+
+    @media only screen and (max-width: 1080px) {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 3rem;
+    }
+
+     
+
+
+    &__header {
+        font-size: 3rem;
+        font-family: $font-main;
+        padding: 4rem 0 2rem 0;
+        color: rgb(59, 59, 59);
+        
+    }
+
+    &__widget {
+     
+        
+    }
+}

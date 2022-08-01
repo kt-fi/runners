@@ -1,0 +1,62 @@
+// FONTS
+
+$font-main: 'Josefin Sans', sans-serif;
+$font-p: 'Open Sans', sans-serif;
+
+//COLORS
+
+$color-salmon: #eb4558;
+$color-yellow:  #f78259;
+
+
+// GLOBAL RESET + BASE SETTINGS
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;                      // SET REM to 1rem = 10px
+   
+
+    @media only screen and (max-width: 900px) {
+        font-size: 50%;                         // Decrease size of all thigs set with REM  
+    }
+}
+
+body {
+    overflow-x: hidden;
+max-width: 1450px;
+margin: 0 auto;
+
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 90vh;
+
+    background-color: rgb(255, 255, 255);
+
+
+    @media only screen and (max-width: 1200px) {
+        grid-template-rows: 90vh max-content max-content;  
+    }
+
+    @media only screen and (max-width: 600px) {
+        grid-template-rows: 55vh max-content max-content;
+        
+    }
+
+    
+}
+
+

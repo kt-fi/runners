@@ -1,0 +1,72 @@
+.nav {
+
+    &__box{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+
+       
+        background-color: rgb(17, 18, 27);
+        border-bottom: 2px solid $color-salmon;
+        height:5.5rem;
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    &__link {
+        font-size: 2rem;
+        color: $color-yellow;
+        font-family: $font-main;
+        list-style-type: none;
+        height: 5rem;
+        width: 25rem;
+        padding: 0 1.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+.link__anim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 5rem;
+    background-color: #f78259;
+    width: 0;
+
+    &:hover {
+        animation-name:linkAnim ;
+     animation-duration: .8s;
+     cursor: pointer;
+     animation-fill-mode: forwards; 
+    }
+     
+}
+
+// LINK ANIMATION ****************************************************************************
+
+@keyframes linkAnim {
+
+    0% {
+        width: 0%;
+        background-color: #f78259;
+    }
+
+    50% {
+        color:  rgb(27, 14, 0);
+    }
+
+    100%{
+        color:  rgb(27, 14, 0);
+        width: 15rem;
+        padding: 0 2rem;
+    }
+}

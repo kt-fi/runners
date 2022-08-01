@@ -1,0 +1,97 @@
+.weather {
+
+background-color: #00d60b;
+grid-column: 1 / -1;
+height: 5rem;
+margin-top: 1rem;
+border: 1px solid black;
+font-family: $font-p;
+font-size: 2rem;
+font-weight: 200;
+
+@media only screen and (max-width: 690px) {
+    height: 7rem;;
+}
+
+@media only screen and (max-width: 425px) {
+    height: 8rem;
+
+}
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__header {
+        padding-left: 5rem;
+        @media only screen and (max-width: 425px) {
+            padding-left: 1rem;
+        
+        }
+        
+    }
+
+    &__today {
+            padding-right: 5rem;
+            @media only screen and (max-width: 425px) {
+                padding-right: 1rem;
+            
+            }
+            
+    }
+}
+
+
+
+.card1 {
+   
+    position: relative;
+    height: 200px;
+    width: 200px;
+ }
+
+ .card__side {
+    height: 150px;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    }
+
+.card__side--front {
+    background-color: #fff;
+    border: 10px solid blue ;
+}
+
+.card__side--back {
+    transform: rotateY(180deg);
+    background-color: blue; 
+ 
+ }
+
+.card1:hover .card__side--front {
+    transform: rotateY(-180deg);
+ }
+
+.card1:hover .card__side--back {
+    transform: rotateY(0); 
+}
+  
+
+.card__back--text {
+    justify-content: center;
+     text-align: center;
+     color: #fff;
+}
+
+  
+   
+ 
